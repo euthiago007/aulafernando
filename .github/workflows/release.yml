@@ -1,5 +1,7 @@
 
+
 name: Release Package
+
 on:
   push:
     tags:
@@ -24,12 +26,10 @@ jobs:
             --output=release-package.zip \
             HEAD
 
-   
       - name: Publicar Release
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          TAG: ${{ github.ref_name }}
+          TAG: v1.0.0
         run: |
-          git push origin "$TAG"
           gh release upload "$TAG" release-package.zip --clobber
 
