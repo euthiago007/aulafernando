@@ -1,5 +1,7 @@
 # Changelog
 
+- Update release.yml to use fixed version tag (3342016)
+- Atualiza CHANGELOG (9f4f25d)
 - Add workflow_dispatch trigger to release workflow (0f361e9)
 - Atualiza CHANGELOG (bfece9e)
 - melhorando change (e75f06f)
@@ -18,5 +20,3 @@
 - Atualiza CHANGELOG (fbe5208)
 - Update GitHub Actions workflow to generate changelog (fb85596)
 - Delete nome.yml (e5bbca0)
-- Add CI workflow for GitHub Actions (a9777af)
-- primeiro commit action (40af5fd)
