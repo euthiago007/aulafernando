@@ -1,5 +1,7 @@
 # Changelog
 
+- Update README.md (3ed6ad0)
+- Atualiza CHANGELOG (1da6dc4)
 - Update README.md (5d7a530)
 - Atualiza CHANGELOG (1d9327e)
 - Configure release workflow for GitHub Actions (2081f6f)
