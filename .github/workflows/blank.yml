@@ -11,22 +11,26 @@ permissions:
 
 jobs:
   changelog:
+    if: github.actor != 'github-actions[bot]'
     runs-on: ubuntu-latest
 
     steps:
-      - name: Baixar repositório
+      - name: Baixar repositorio
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
       - name: Gerar CHANGELOG
         run: |
-          echo "# Changelog" > CHANGELOG.md
-          echo "" >> CHANGELOG.md
-          git log -20 --pretty=format:"- %s (%h)" >> CHANGELOG.md
-          echo "" >> CHANGELOG.md
+          {
+            echo "# Changelog"
+            echo ""
+            git log -20 --pretty=format:"- %s (%h)" \
+              --no-show-signature
+            echo ""
+          } > CHANGELOG.md
 
-      - name: Salvar alterações
+      - name: Salvar alteracoes
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
