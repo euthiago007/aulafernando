@@ -1,5 +1,7 @@
 # Changelog
 
+- Modify release workflow for tagging and uploading (f0bc987)
+- Atualiza CHANGELOG (d2461c0)
 - fdzczc (1f5f637)
 - Atualiza CHANGELOG (652438b)
 - Update README.md (3ed6ad0)
