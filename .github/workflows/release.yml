@@ -1,0 +1,37 @@
+
+name: Release Package
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+permissions:
+  contents: write
+
+jobs:
+  package:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout do repositorio
+        uses: actions/checkout@v4
+
+      - name: Compactar repositorio
+        run: |
+          git archive \
+            --format=zip \
+            --output=release-package.zip \
+            HEAD
+
+      - name: Publicar Release
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          TAG: ${{ github.ref_name }}
+        run: |
+          gh release create "$TAG" \
+            release-package.zip \
+            --title "Release $TAG" \
+            --notes "Pacote do repositorio para a versao $TAG" \
+            --verify-tag
+
