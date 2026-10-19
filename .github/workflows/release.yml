@@ -24,14 +24,12 @@ jobs:
             --output=release-package.zip \
             HEAD
 
+   
       - name: Publicar Release
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           TAG: ${{ github.ref_name }}
         run: |
-          gh release create "$TAG" \
-            release-package.zip \
-            --title "Release $TAG" \
-            --notes "Pacote do repositorio para a versao $TAG" \
-            --verify-tag
+          git push origin "$TAG"
+          gh release upload "$TAG" release-package.zip --clobber
 
