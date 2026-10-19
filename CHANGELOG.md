@@ -1,5 +1,7 @@
 # Changelog
 
+- Add workflow_dispatch trigger to release workflow (0f361e9)
+- Atualiza CHANGELOG (bfece9e)
 - melhorando change (e75f06f)
 - Atualiza CHANGELOG (7f61b5c)
 - Modify release workflow for tagging and uploading (f0bc987)
