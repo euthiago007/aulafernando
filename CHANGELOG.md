@@ -1,5 +1,7 @@
 # Changelog
 
+- melhorando change (e75f06f)
+- Atualiza CHANGELOG (7f61b5c)
 - Modify release workflow for tagging and uploading (f0bc987)
 - Atualiza CHANGELOG (d2461c0)
 - fdzczc (1f5f637)
