@@ -1,5 +1,7 @@
 # Changelog
 
+- fdzczc (1f5f637)
+- Atualiza CHANGELOG (652438b)
 - Update README.md (3ed6ad0)
 - Atualiza CHANGELOG (1da6dc4)
 - Update README.md (5d7a530)
