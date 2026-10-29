@@ -1,5 +1,7 @@
 # Changelog
 
+- adicionei os campos de detalhamento das linhas do changelog, e deixei o read me mais bonito :] (d9d1cbd)
+- Atualiza CHANGELOG (04d07c8)
 - Update README with project details and automation workflows (cb35e62)
 - Atualiza CHANGELOG (32adcb7)
 - Update release.yml to use fixed version tag (3342016)
@@ -18,5 +20,3 @@
 - Atualiza CHANGELOG (1d9327e)
 - Configure release workflow for GitHub Actions (2081f6f)
 - Atualiza CHANGELOG (2c9f3fd)
-- Add initial README.md file (71cff38)
-- Atualiza CHANGELOG (fbe5208)
